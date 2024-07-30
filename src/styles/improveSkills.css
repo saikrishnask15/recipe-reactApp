@@ -1,0 +1,50 @@
+.section.improve-skills .col img{
+ width: 100%;
+}
+.section.improve-skills .col.typography{
+    padding-left: 1em;
+}
+@keyframes slideInRight {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+.col.typography .skill-item{
+    border-left: .2em solid rgb(169, 71, 14);
+    margin-bottom: .4em;
+    padding:.1em 0 .1em .5em;
+    color:rgb(140, 138, 138);
+    font-weight: bold;
+    transform: translateX(100%);
+    opacity: 0;
+    animation: 1.3s slideInRight forwards;
+}
+.col.typography .skill-item:nth-child(2){
+    animation-delay: .1s;
+}
+.col.typography .skill-item:nth-child(3){
+    animation-delay: .2s;
+}
+.col.typography .skill-item:nth-child(4){
+    animation-delay: .3s;
+}
+.col.typography .skill-item:nth-child(5){
+    animation-delay: .4s;
+}
+.col.typography .skill-item:nth-child(6){
+    animation-delay: .5s;
+}
+.col.typography .skill-item:nth-child(7){
+    animation-delay: .6s;
+}
+
+
+.section.improve-skills .col.typography .btn{
+    margin-top: .75em;
+}

@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { createContext } from "react";
+import "./App.css";
+import UseAxios from "./components/useAxios";
+import Recipe from "./components/recipeSearch/recipe";
+import Search from "./components/recipeSearch/search";
+import { BrowserRouter } from "react-router-dom";
+import NavBar from "./components/navBar";
+import HeroSection from "./components/heroSection";
+import ImproveSkills from "./components/improveSkills";
+import QuoteSection from "./components/quoteSection";
+import ChefSection from "./components/chefSection";
+import Footer from "./components/footer";
+export const RecipeContext = createContext();
 function App() {
+  const { response, fetchData } = UseAxios();
+  const value = {
+    response,
+    fetchData,
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RecipeContext.Provider value={value}>
+      <BrowserRouter>
+        <div className="App">
+          <NavBar />
+          <div className="container main">
+            <HeroSection />
+            <ImproveSkills />
+            <QuoteSection />
+            <ChefSection />
+          </div>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </RecipeContext.Provider>
   );
 }
 

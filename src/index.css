@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #0A0A0A;
+  padding-top: 55px;
+}
+.main{
+  padding-block: 3vw;
+}
+.container{
+  padding-inline: 12vw;
+}
+.section{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vw;
+  flex-wrap: wrap;
+}
+.section .col{
+  width: 50%;
+}
+.btn{
+  border:none;
+  background-color: rgb(169, 71, 14);
+  padding: 8px 10px;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px  rgba(0,0,0,0.2);
+}
+@media screen and (max-width:1280px) {
+  .container{
+    padding-inline: 18vw;
+  }
+  
+}
+@media screen and (max-width:1050px) {
+  .container{
+    padding-inline: 12vw;
+  }
+
+  
+}
+@media screen and (max-width:768px) {
+  .container{
+    padding-inline: 6vw;
+  }
+  .section .col{
+    width: 100%;
+    padding: 0 !important;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+ .skill-item{
+    display: inline-block;
+    margin: .75em;
+  }
+  .section.improve-skills .btn{
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer-ctn{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .footer-section:nth-child(1){
+    grid-column: span 4;
+    margin-bottom: 1em;
+  }
+  .footer-section:nth-child(2) , .footer-section:nth-child(3){
+    grid-column: span 2;
+  }
+  
+}
+@media screen and (max-width:480px) {
+  .container{
+    padding-inline: 3vw;
+  }
+
+  
 }
