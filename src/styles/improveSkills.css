@@ -1,5 +1,6 @@
 .section.improve-skills .col img{
  width: 100%;
+ border-radius: 3px;
 }
 .section.improve-skills .col.typography{
     padding-left: 1em;
@@ -24,6 +25,7 @@
     transform: translateX(100%);
     opacity: 0;
     animation: 1.3s slideInRight forwards;
+    font-size: 1.2em;
 }
 .col.typography .skill-item:nth-child(2){
     animation-delay: .1s;

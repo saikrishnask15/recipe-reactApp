@@ -10,6 +10,10 @@ body{
   color: #0A0A0A;
   padding-top: 55px;
 }
+a{
+  text-decoration: none
+}
+@import './styles/navBar.css';
 .main{
   padding-block: 3vw;
 }
@@ -28,7 +32,7 @@ body{
 .btn{
   border:none;
   background-color: rgb(169, 71, 14);
-  padding: 8px 10px;
+  padding: 10px 10px;
   outline: none;
   color: #fff;
   text-transform: uppercase;
@@ -38,6 +42,11 @@ body{
   font-weight: bold;
   box-shadow: 0 2px 6px  rgba(0,0,0,0.2);
 }
+@import "./styles/heroSection.css";
+@import './styles/improveSkills.css';
+@import './styles/quoteSection.css';
+@import "./styles/chiefSection.css";
+@import "./styles/footer.css";
 @media screen and (max-width:1280px) {
   .container{
     padding-inline: 18vw;
@@ -61,6 +70,9 @@ body{
     text-align: center;
     margin-bottom: 2em;
   }
+  .section .title{
+    text-align: center;
+  }
  .skill-item{
     display: inline-block;
     margin: .75em;
@@ -69,6 +81,7 @@ body{
     display: block;
     margin-left: 50%;
     transform: translateX(-50%);
+    
   }
   .footer-ctn{
     grid-template-columns: repeat(4,1fr);
@@ -83,6 +96,9 @@ body{
   
 }
 @media screen and (max-width:480px) {
+  body{
+    padding-top: 60px;
+  }
   .container{
     padding-inline: 3vw;
   }

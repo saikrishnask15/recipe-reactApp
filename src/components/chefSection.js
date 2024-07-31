@@ -1,5 +1,4 @@
 import CheifCard from "./cheifCard";
-import "../styles/chiefSection.css";
 import img1 from '../assests/topChiefs/img_1.jpg';
 import img2 from '../assests/topChiefs/img_2.jpg';
 import img3 from "../assests/topChiefs/img_3.jpg";

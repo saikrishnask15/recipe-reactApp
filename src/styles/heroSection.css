@@ -24,11 +24,11 @@
 }
 .section .info{
     margin-bottom: 4px;
-    font-size: 1em;
+    font-size: 1.2em;
     color:rgb(140, 138, 138);
     /* letter-spacing: 1px; */
     line-height: 1.3;
-    margin-bottom: 1.25em;
+    margin-bottom: 1.2em;
 }
 
 .section.hero .typography{

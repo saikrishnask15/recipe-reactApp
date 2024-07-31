@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../styles/quoteSection.css'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 const QuoteSection = () => {
   return (

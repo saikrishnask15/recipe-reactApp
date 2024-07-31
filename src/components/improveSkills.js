@@ -1,5 +1,4 @@
 import ramen from "../assests/ramen.jpg";
-import '../styles/improveSkills.css';
 const ImproveSkills = () => {
     const list=[
         "Learn new recepies",
