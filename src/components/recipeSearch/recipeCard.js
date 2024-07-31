@@ -1,7 +1,7 @@
-import RecipeDetails from "./recipeDetails";
+
 
 const RecipeCard = ({ data }) => {
-  const { label, image, url, ingredients } = data.recipe;
+  const { label, image, url} = data.recipe;
   return (
     <div className="recipe-card">
       <img src={image} alt="" />
@@ -13,9 +13,6 @@ const RecipeCard = ({ data }) => {
         VIEW RECIPE
       </a>
       </div>
-     
-      {/* {ingredients.map((ingredients,key)=>
-        <RecipeDetails ingredients={ingredients} key={key} />)} */}
     </div>
   );
 };

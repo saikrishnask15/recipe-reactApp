@@ -16,6 +16,7 @@ function App() {
   return (
     <RecipeContext.Provider value={value}>
       <BrowserRouter>
+      <div className="ctn">
         <NavBar />
         <div className="container main">
           <Routes>
@@ -24,6 +25,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
+        </div>
       </BrowserRouter>
     </RecipeContext.Provider>
   );
