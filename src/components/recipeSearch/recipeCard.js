@@ -1,17 +1,36 @@
-
-
+import { useState } from "react";
+import RecipeLinesModal from "./RecipeLinesModal";
 const RecipeCard = ({ data }) => {
-  const { label, image, url} = data.recipe;
+  const { label, image, ingredientLines } = data.recipe;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="recipe-card">
       <img src={image} alt="" />
       <div className="recipe-info">
-      {/* <img src={image} alt=""  /> */}
-      <p className="recipe-name">{label}</p>
-      <p className="recipe-cuisine">{data.recipe.cuisineType}</p>
-      <a className="view-btn" href={url} target="_blank" rel="noreferrer noopener">
-        VIEW RECIPE
-      </a>
+        {/* <img src={image} alt=""  /> */}
+        <p className="recipe-name">{label}</p>
+        <p className="recipe-cuisine">{data.recipe.cuisineType}</p>
+        <button className="btn" onClick={handleOpenModal}>
+          VIEW RECIPE
+        </button>
+        <RecipeLinesModal isOpen={isModalOpen} onClose={handleCloseModal}>
+         <h2>{label}</h2>
+         <h4>Ingredients Lines:</h4>
+         <div className="modal-ingredient-ctn">
+          {ingredientLines.map((value, key) => (
+            <ul key={key}>
+              <li>{value}</li>
+            </ul>
+          ))}
+          </div>
+        </RecipeLinesModal>
       </div>
     </div>
   );
