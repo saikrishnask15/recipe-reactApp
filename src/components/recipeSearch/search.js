@@ -40,6 +40,7 @@ const Search = () => {
     "mutton",
     "noodles",
     "french fries",
+    "ramen"
   ];
   return (
     <div className="section recipe-search-ctn">
