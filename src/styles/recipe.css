@@ -83,6 +83,9 @@
   color: rgb(177, 89, 38);
   font-weight: bold;
 }
+.recipe-name-cuisine-wrapper{
+  min-height: 60px;
+}
 
 /* modal */
 .modal-overlay{

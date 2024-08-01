@@ -7,6 +7,7 @@ const SideBar = ({close}) => {
         <FontAwesomeIcon icon={faHome} />
         Home
       </a>
+      
       <a className="sidebar-link active" href="/RecipePage">
         <FontAwesomeIcon icon={faList} />
         Recipes
